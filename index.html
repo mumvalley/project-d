@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Project-d</title>
+  <!-- アニメーション -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- アイコン -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- jQuery読み込み -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+  <!-- フォント1ゲーム -->
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Cutive+Mono|Overpass+Mono:300" rel="stylesheet">
+  <!-- cssリセット -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- フォント2筆記体 -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<p class="ffo">Drum Machine..</p>
+  <div class="container"> <!-- 背景 -->
+    <div class="sampler"> <!-- サンプラー本体 -->
+
+      <div class="strap one"></div> <!-- top-plateの左から1/3部分 -->
+      <div class="strap two"></div> <!-- top-plateの左から2/3部分 -->
+
+      <div class="top-plate"></div> <!-- サンプラー上部 -->
+      <div class="on-button"></div> <!-- 電源ボタン -->
+
+      <div class="detail-strip"> <!-- top-plateとpadの間部分 -->
+        <div class="strip-one"></div> <!-- detail-strip部分の飾り -->
+        <div class="strip-two"></div> <!-- detail-strip部分の飾り -->
+        <div class="strip-three"></div> <!-- detail-strip部分の飾り -->
+        <div class="strip-four"></div> <!-- detail-strip部分の飾り -->
+      </div>
+
+      <div class="screen"><span class='screen-info'></span></div> <!-- スクリーン部分 -->
+      <div id="slider"></div> <!-- スクリーン下のスライダー -->
+
+      <div class="dial-panel"> <!-- ダイアル全体 -->
+        <div class="dial"></div> <!-- ダイアル外側 -->
+        <div class="dial-inner-2"></div> <!-- ダイアル内側2 -->
+        <div class="dial-inner-1"></div> <!-- ダイアル内側1 -->
+
+      </div>
+
+      <div class="bank-one active">Bank1</div> <!-- 右下のbankボタン -->
+      <div class="bank-two">Bank2</div> <!-- 右下のbankボタン -->
+
+      <div class="pad-container"> <!-- padの全体部分 -->
+        <div class="pad" id="one" data-key="81">Q</div>
+        <div class="pad" id="two" data-key="87">W</div>
+        <div class="pad" id="three" data-key="69">E</div>
+        <div class="pad" id="four" data-key="82">R</div>
+        <div class="pad" id="five" data-key="65">A</div>
+        <div class="pad" id="six" data-key="83">S</div>
+        <div class="pad" id="seven" data-key="68">D</div>
+        <div class="pad" id="eight" data-key="70">F</div>
+        <div class="pad" id="nine" data-key="90">Z</div>
+        <div class="pad" id="ten" data-key="88">X</div>
+        <div class="pad" id="eleven" data-key="67">C</div>
+        <div class="pad" id="twelve" data-key="86">V</div>
+      </div>
+      <div class="bottom-plate"></div> <!-- サンプラー下部 -->
+    </div>
+  </div>
+  <!-- jQueryの読み込み -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <!-- オーディオライブラリ読み込み -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js'></script>
+  <!-- jQueryuiの読み込み -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  <!-- gsupアニメーション読み込み -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
